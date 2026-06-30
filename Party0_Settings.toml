@@ -1,0 +1,42 @@
+#[role]
+ti = false  # trusted initializer = true, computing party = false
+party_id = 0 # one party must be 0, the other is 1
+
+#[network]
+ti_port = 4000
+party0_port = 5000
+party1_port = 6000
+
+#LOGISTIC REGRESSION 
+
+additive_share_count = 2000000
+xor_share_count = 500000
+
+xor_shares_path = "C:/Users/davis/projects/idash2019_rust/ti_shares/0_ti_xor_shares.csv"
+additive_shares_path = "C:/Users/davis/projects/idash2019_rust/ti_shares/0_ti_additive_shares.csv"
+
+# can be blank in TI instance
+#[files]	
+decimal_precision = 10
+integer_precision = 15 
+learning_rate = 0.001
+
+# BC TCGA
+
+x_input_path = "C:/Users/davis/projects/idash2019_rust/inputs/BC_TCGA_5_folds/1X_train_share0.csv" 
+y_input_path = "C:/Users/davis/projects/idash2019_rust/inputs/BC_TCGA_5_folds/1y_train_share0.csv"
+output_path = "C:/Users/davis/projects/idash2019_rust/weights/BC_TCGA_5_folds/fold_1_weights.csv"
+attribute_count = 17814 
+instance_count = 375    
+iterations = 5          
+
+
+# GSE 2034
+
+#x_input_path = 'C:/Users/davis/projects/idash2019_rust/inputs/GSE2034_5_folds/2X_train_share0.csv'
+#y_input_path = 'C:/Users/davis/projects/idash2019_rust/inputs/GSE2034_5_folds/2y_train_share0.csv'
+#output_path = "C:/Users/davis/projects/idash2019_rust/weights/GSE2034_5_folds/fold_2_weights.csv"
+#attribute_count = 12634
+#instance_count = 179
+#iterations = 223
+

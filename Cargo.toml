@@ -1,0 +1,11 @@
+[package]
+name = "idash2019_rust"
+version = "0.1.0"
+authors = ["drail <daviscrailsback@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.3.14"
+itertools = "0.8"
+config = "0.9.3"
+csv = "1"
